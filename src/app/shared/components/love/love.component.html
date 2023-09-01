@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 mt-4">
+            <div class="card" *ngFor="let s of reelsArray">
+                <div class="card-header">
+                    {{s.title}}
+                </div>
+                <div class="card-body d-flex justify-content-between">
+                 <p>{{s.count}}</p>   
+                  <span (click)="isclicked($event)" liked><i class="fa fa-heart fa-3x"></i>
+                  </span>   
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
